@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "85009411675",
+    "firebase_url": "https://example-project-3e893.firebaseio.com",
+    "project_id": "example-project-3e893",
+    "storage_bucket": "example-project-3e893.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:85009411675:android:f59a050803044400",
+        "android_client_info": {
+          "package_name": "aisha.geolocationapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "85009411675-g62fm0tgv6a48a1kn9fqbdcbb7qu4h9b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "aisha.geolocationapp",
+            "certificate_hash": "d602315c96e101bc357aeb205596f6678dfea284"
+          }
+        },
+        {
+          "client_id": "85009411675-r6qg26calfppqtekr14ikm2oqfch9qee.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAe5yM3cwBNk-U2aP_Aotcw-r6bAacTacs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "85009411675-r6qg26calfppqtekr14ikm2oqfch9qee.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

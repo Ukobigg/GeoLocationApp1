@@ -1,0 +1,19 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="aisha.geolocationapp.Main.UnapprovedFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#e8eaf6"
+        android:layout_width="match_parent"
+        android:id="@+id/RecyclerviewUnapproved"
+        android:visibility="visible">
+    </android.support.v7.widget.RecyclerView>
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+</FrameLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:id="@+id/container_item_root"
+    android:background="@drawable/background_state_drawable"
+    android:clickable="true"
+    android:focusable="true"
+    >
+
+    <ImageView
+        android:id="@+id/Limage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/DateTimeTag"
+        android:layout_toEndOf="@+id/EmergencyIdTag"
+        android:layout_toRightOf="@+id/EmergencyIdTag"
+        android:paddingLeft="16dp"
+        android:src="@drawable/ic_local_pharmacy_black_36dp" />
+
+    <TextView
+        android:id="@+id/EmergencyTag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="72dp"
+        android:layout_marginRight="48dp"
+        android:layout_alignTop="@+id/Limage"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif"
+        android:singleLine="true"
+        android:textColor="@android:color/black"
+        android:text="Emergency Type"
+        android:textSize="16sp"
+        android:gravity="center_vertical"/>
+
+    <TextView
+        android:id="@+id/AddressTag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:layout_alignEnd="@+id/EmergencyTag"
+        android:layout_alignLeft="@+id/EmergencyTag"
+        android:layout_alignRight="@+id/EmergencyTag"
+        android:layout_alignStart="@+id/EmergencyTag"
+        android:layout_below="@+id/EmergencyTag"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="Address"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/DateTimeTag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/EmergencyTag"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/EmergencyTag"
+        android:layout_marginLeft="228dp"
+        android:layout_marginStart="228dp"
+        android:layout_marginTop="14dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center_vertical"
+        android:text="22-11-1991"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/EmergencyIdTag"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="ID"
+        android:visibility="invisible"/>
+    <TextView
+        android:id="@+id/EmergencystatusTag"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="ID"
+        android:visibility="invisible"/>
+    <TextView
+        android:id="@+id/LongitudeTag"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="ID"
+        android:visibility="invisible"/>
+    <TextView
+        android:id="@+id/LatitudeTag"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="ID"
+        android:visibility="invisible"/>
+    <TextView
+        android:id="@+id/UserIDTag"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="ID"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

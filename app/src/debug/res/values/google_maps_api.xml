@@ -1,0 +1,24 @@
+<resources>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=D6:02:31:5C:96:E1:01:BC:35:7A:EB:20:55:96:F6:67:8D:FE:A2:84%3Baisha.geolocationapp.Main
+
+    You can also add your credentials to an existing key, using these values:
+
+    Package name:
+    D6:02:31:5C:96:E1:01:BC:35:7A:EB:20:55:96:F6:67:8D:FE:A2:84
+
+    SHA-1 certificate fingerprint:
+    D6:02:31:5C:96:E1:01:BC:35:7A:EB:20:55:96:F6:67:8D:FE:A2:84
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyArUWBkLCdTcIuaK6X1UOThdAXzXmwgqlo</string>
+</resources>

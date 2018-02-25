@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_unapproved"
+        android:icon="@drawable/ic_format_list_bulleted_black_24dp"
+        android:title="@string/title_unapproved" />
+
+    <item
+        android:id="@+id/navigation_approved"
+        android:icon="@drawable/ic_playlist_add_check_black_24dp"
+        android:title="@string/title_approved" />
+
+    <item
+        android:id="@+id/navigation_archive"
+        android:icon="@drawable/ic_featured_play_list_black_24dp"
+        android:title="@string/title_archive" />
+</menu>
