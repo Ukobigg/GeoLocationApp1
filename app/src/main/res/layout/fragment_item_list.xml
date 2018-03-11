@@ -4,13 +4,13 @@
     android:id="@+id/card_view"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="10dp"
-    android:layout_marginBottom="5dp"
+    android:layout_margin="6dp"
+    android:layout_marginBottom="4dp"
     card_view:cardCornerRadius="4dp">
 
 <RelativeLayout
     android:orientation="horizontal" android:layout_width="match_parent"
-    android:layout_height="90dp"
+    android:layout_height="80dp"
     android:id="@+id/container_item_root"
     android:background="@drawable/background_state_drawable"
     android:clickable="true"
@@ -23,15 +23,15 @@
         android:layout_alignTop="@+id/DateTimeTag"
         android:layout_toEndOf="@+id/EmergencyIdTag"
         android:layout_toRightOf="@+id/EmergencyIdTag"
-        android:paddingLeft="16dp"
+        android:paddingLeft="8dp"
         android:src="@drawable/ic_local_pharmacy_black_36dp" />
 
     <TextView
         android:id="@+id/EmergencyTag"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="72dp"
-        android:layout_marginRight="48dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="90dp"
         android:layout_alignTop="@+id/Limage"
         android:ellipsize="end"
         android:fontFamily="sans-serif"
@@ -45,7 +45,7 @@
         android:id="@+id/AddressTag"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginRight="30dp"
+        android:layout_marginRight="35dp"
         android:layout_alignEnd="@+id/EmergencyTag"
         android:layout_alignLeft="@+id/Limage"
         android:layout_alignRight="@+id/DateTimeTag"
@@ -55,7 +55,7 @@
         android:gravity="center_vertical"
         android:singleLine="false"
         android:text="Address"
-        android:textSize="14sp" />
+        android:textSize="12sp" />
 
     <TextView
         android:id="@+id/DateTimeTag"
@@ -64,13 +64,13 @@
         android:layout_alignLeft="@+id/EmergencyTag"
         android:layout_alignParentTop="true"
         android:layout_alignStart="@+id/EmergencyTag"
-        android:layout_marginLeft="228dp"
-        android:layout_marginStart="228dp"
+        android:layout_marginLeft="215dp"
+        android:layout_marginStart="215dp"
         android:layout_marginTop="14dp"
         android:fontFamily="sans-serif"
         android:gravity="center_vertical"
         android:text="22-11-1991"
-        android:textSize="14sp" />
+        android:textSize="12sp" />
 
     <TextView
         android:id="@+id/EmergencyIdTag"

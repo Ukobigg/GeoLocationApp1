@@ -1,25 +1,37 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin">
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="aisha.geolocationapp.Main.AboutusFragment">
 
 
-    <Button
-        android:id="@+id/add_geofences_button"
-        android:layout_width="0dp"
+
+    <TextView
+        android:id="@+id/Aboutus"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:onClick="addGeofencesButtonHandler"
-        android:text="@string/add_geofences" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="18dp"
+        android:text="ABOUT US"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="30sp" />
 
-    <Button
-        android:id="@+id/remove_geofences_button"
-        android:layout_width="0dp"
+    <TextView
+        android:id="@+id/AboutusText"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:onClick="removeGeofencesButtonHandler"
-        android:text="@string/remove_geofences" />
-</LinearLayout>
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Aboutus"
+        android:layout_marginTop="40dp"
+        android:text="The Emergency alert system leverages on geofencing technology to notify residents of emergency occurences that may be happening around them.
+It serves as a quick and effecrtive means of communicating to those who may be most affected by an emergency"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="20sp" />
+</RelativeLayout>

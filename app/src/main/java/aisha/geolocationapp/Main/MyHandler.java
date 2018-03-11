@@ -1,4 +1,8 @@
-package aisha.geolocationapp.Notification;
+package aisha.geolocationapp.Main;
+
+/**
+ * Created by Wesley on 4/8/2016.
+ */
 
 import android.app.NotificationManager;
 import android.app.PendingIntent;
@@ -9,14 +13,8 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.NotificationCompat;
 
-import com.microsoft.windowsazure.notifications.NotificationsHandler;
-
-import aisha.geolocationapp.Main.MainActivity;
 import aisha.geolocationapp.R;
-
-/**
- * Created by UkoDavid on 13/02/2018.
- */
+import com.microsoft.windowsazure.notifications.NotificationsHandler;
 
 public class MyHandler extends NotificationsHandler {
     public static final int NOTIFICATION_ID = 1;
@@ -29,8 +27,8 @@ public class MyHandler extends NotificationsHandler {
         ctx = context;
         String nhMessage = bundle.getString("message");
         sendNotification(nhMessage);
-        if (MainActivity.isVisible) {
-            MainActivity.mainActivity.ToastNotify(nhMessage);
+        if (NewrequestFragment.isVisible) {
+            NewrequestFragment.mainActivity.ToastNotify(nhMessage);
         }
     }
 
@@ -44,18 +42,21 @@ public class MyHandler extends NotificationsHandler {
 
         PendingIntent contentIntent = PendingIntent.getActivity(ctx, 0,
                 intent, PendingIntent.FLAG_ONE_SHOT);
+        Boolean highPriority=false;
 
         Uri defaultSoundUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
         NotificationCompat.Builder mBuilder =
                 new NotificationCompat.Builder(ctx)
                         .setSmallIcon(R.mipmap.ic_launcher)
-                        .setContentTitle("Notification Hub Demo")
+                        .setContentTitle("Emergency Alert Notification")
                         .setStyle(new NotificationCompat.BigTextStyle()
                                 .bigText(msg))
                         .setSound(defaultSoundUri)
-                        .setContentText(msg);
+                        .setContentText(msg)
+                        .setPriority(NotificationCompat.PRIORITY_DEFAULT);
 
         mBuilder.setContentIntent(contentIntent);
         mNotificationManager.notify(NOTIFICATION_ID, mBuilder.build());
     }
+
 }

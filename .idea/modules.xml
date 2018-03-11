@@ -4,9 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/GeoLocationApp.iml" filepath="$PROJECT_DIR$/GeoLocationApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/authority/authority.iml" filepath="$PROJECT_DIR$/authority/authority.iml" />
-      <module fileurl="file://$PROJECT_DIR$/authoritymodule/authoritymodule.iml" filepath="$PROJECT_DIR$/authoritymodule/authoritymodule.iml" />
-      <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
     </modules>
   </component>
 </project>

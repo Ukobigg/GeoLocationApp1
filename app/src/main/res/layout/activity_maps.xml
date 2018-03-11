@@ -11,14 +11,12 @@ android:orientation="vertical">
      android:layout_height="400dp">
 
      <fragment
-         android:id="@+id/map1"
+         android:id="@+id/map"
          android:layout_width="match_parent"
-         android:layout_height="400dp"
+         android:layout_height="match_parent"
          android:layout_weight="0.5"
          class="com.google.android.gms.maps.SupportMapFragment"
-         map:cameraTargetLat="40.72"
-         map:cameraTargetLng="-74.00"
-         map:cameraZoom="8" />
+ />
  </RelativeLayout>
 
 
@@ -42,7 +40,7 @@ android:orientation="vertical">
         android:singleLine="true"
         android:textColor="@android:color/black"
         android:text="Emergency Zone: "
-        android:textSize="16sp"
+        android:textSize="14sp"
         android:gravity="center_vertical"/>
 
     <TextView
@@ -51,12 +49,12 @@ android:orientation="vertical">
     android:layout_height="wrap_content"
     android:layout_marginLeft="10dp"
     android:layout_marginRight="210dp"
-    android:layout_marginTop="25dp"
+    android:layout_marginTop="45dp"
     android:fontFamily="sans-serif"
     android:singleLine="true"
     android:textColor="@android:color/black"
     android:text="Your Current Location:"
-    android:textSize="16sp"
+    android:textSize="14sp"
     android:gravity="center_vertical"/>
 
     <TextView
@@ -65,25 +63,27 @@ android:orientation="vertical">
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="220dp"
-        android:layout_marginTop="55dp"
+        android:layout_marginTop="85dp"
         android:fontFamily="sans-serif"
+        android:textColor="@android:color/black"
         android:gravity="center_vertical"
         android:singleLine="false"
-        android:text="Security Message:"
-        android:textSize="18sp" />
+        android:text="Emergency Type:"
+        android:textSize="14sp" />
 
     <TextView
         android:id="@+id/SecurityMessage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="170dp"
-        android:layout_marginTop="55dp"
+        android:layout_marginTop="85dp"
         android:fontFamily="sans-serif"
         android:gravity="center_vertical"
-        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_red_dark"
         android:singleLine="false"
-        android:text="Message is loading"
-        android:textSize="18sp" />
+        android:text="Emergency"
+        android:textSize="14sp" />
 
     <TextView
         android:id="@+id/LatLng_SavedMapTag"
@@ -92,20 +92,31 @@ android:orientation="vertical">
         android:layout_marginLeft="170dp"
         android:layout_marginRight="10dp"
         android:fontFamily="sans-serif"
+        android:textColor="@android:color/holo_red_dark"
         android:gravity="center_vertical"
-        android:textSize="16sp" />
-
+        android:textSize="14sp" />
 
     <TextView
-        android:id="@+id/LatLng_CurrentMapTag"
+        android:id="@+id/lat"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="170dp"
         android:layout_marginRight="10dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="45dp"
         android:fontFamily="sans-serif"
         android:gravity="center_vertical"
-        android:textSize="16sp"/>
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/lon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="170dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="62dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center_vertical"
+        android:textSize="14sp"/>
 
     <TextView
         android:id="@+id/EmergencyIdMapTag"

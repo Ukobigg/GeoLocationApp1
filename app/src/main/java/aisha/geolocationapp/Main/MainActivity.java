@@ -18,9 +18,6 @@ import android.util.Log;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import aisha.geolocationapp.Notification.MyHandler;
-import aisha.geolocationapp.Notification.NotificationSettings;
-import aisha.geolocationapp.Notification.RegistrationIntentService;
 import aisha.geolocationapp.R;
 
 public class MainActivity extends AppCompatActivity {
@@ -51,24 +48,28 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                         Fragment selectedFragment = null;
+                        String title ="";
                         switch (item.getItemId()) {
                             case R.id.navigation_home:
                                 selectedFragment = NewrequestFragment.newInstance();
+                                title = "Home";
                                 break;
 
                             case R.id.navigation_dashboard:
                                 selectedFragment = NotificationFragment.newInstance();
+                                title = "All Emergencies";
                                 break;
 
                             case R.id.navigation_notifications:
                                 selectedFragment = AboutusFragment.newInstance();
-
+                                title = "About Us";
                                 break;
 
                         }
                         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
                         transaction.replace(R.id.container, selectedFragment);
                         transaction.commit();
+                        getSupportActionBar().setTitle(title);
                         return true;
                     }
                 });
@@ -77,6 +78,8 @@ public class MainActivity extends AppCompatActivity {
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.container, NewrequestFragment.newInstance());
         transaction.commit();
+        getSupportActionBar().setTitle("Home");
+
 
         //Used to select an item programmatically
         //bottomNavigationView.getMenu().getItem(2).setChecked(true);
